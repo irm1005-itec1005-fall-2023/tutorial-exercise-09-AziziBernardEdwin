@@ -18,8 +18,13 @@ const vacationDestination = "Paris";
 // and if it is then output "Woohoo, excellent choice" otherwise output "Awww, but that's still cool"
 // Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 // Expected output: "Woohoo, excellent choice"
+if (vacationDestination === "Paris") {
+    console.log("Woohoo, excellent choice"); 
+}
 
-
+else {
+    console.log("Awww, but that's still cool")
+}
 
 
 
@@ -31,7 +36,7 @@ const vacationDestination = "Paris";
 //
 
 // Create a const variable called studentGradeValue and assign it to the number 55
-
+const studentGradeValue = 55 
 
 // Create a let variable called studentGradeLetter and assign it to null
 // (since we don't know what it is just yet - we're going to calculate it next
@@ -47,22 +52,29 @@ let studentGradeLetter = null;
 //  ELSE studentGradeLetter = "F"
 //
 
+if (studentGradeLetter >= 90) {
+    studentGradeLetter = "A+"
+}
 
+if (studentGradeLetter >= 80) {
+    studentGradeLetter = "A"
+}
 
+if (studentGradeLetter >= 70) {
+    studentGradeLetter = "B"
+}
 
+if (studentGradeLetter >= 60) {
+    studentGradeLetter = "C"
+}
 
+if (studentGradeLetter >= 50) {
+    studentGradeLetter = "D"
+}
 
-
-
-
-
-
-
-
-
-
-
-
+else {
+    studentGradeLetter = "F"
+}
 
 
 // Output the calculated Student Grade Letter
@@ -91,6 +103,9 @@ let starWarsShips = ["Luke Skywalker", "Star Destroyer", "Millennium Falcon", "C
 //  Star Destroyer
 //  Millennium Falcon
 //  CR90 corvette
+for (const element of starWarsShips) {
+    console.log(element);
+}
 
 
 
@@ -120,7 +135,9 @@ const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeir
 //  2 - "Tokyo"
 //  etc until 9 - "Moscow"
 // Hint, you can print multiple variables to the console using the "," (comma) value as a seperator
-
+for (let i = 0; i < cities.length ; i++) {
+    console.log(i,cities[i]);
+}
 
 
 // Now, lets print the index value of "Paris"
@@ -129,8 +146,11 @@ const cities = ['New York', 'Paris', 'Tokyo', 'London', 'Sydney', 'Rio de Janeir
 // ELSE just do nothing and go to the next loop iteration
 // Expected output:
 //  Found Paris is at index: 1
-
-
+for (let i = 0; i < cities.length; i++){
+    if (cities[i] === "Paris") {
+        console.log("Found Paris at index", i);
+    }
+}
 
 
 
